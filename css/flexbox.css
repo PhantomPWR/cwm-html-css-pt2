@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgrey;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: gold;
+    margin: 1rem;
+    width: 35rem;
+    height: 5rem;
+    flex: 1 1 15rem;
+}
+
+.box-one {
+    flex-shrink: 0;
+}

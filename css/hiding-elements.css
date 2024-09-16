@@ -1,0 +1,4 @@
+.first {
+    display: none; /* removes the element from the page */
+    visibility: hidden; /* hides the element but still takes up space */
+}

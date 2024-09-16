@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgrey;
+    height: 100vh;
+    display: grid;
+    /* 3 row x 2 cols */
+    grid-template: 100px auto 100px / 30fr 70fr;
+    grid-template-areas: 
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: 10px;
+    /* align grid container */
+    /* justify-content: center;
+    align-content: center; */
+    /* align grid items - default: stretch */
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.box {
+    background-color: gold;
+    /* width: 5rem; */
+    /* height: 5rem; */
+}
+
+.box-one {
+    grid-column: 1 / span 2;
+    grid-area: header;
+}
+
+.box-four {
+    grid-area: footer;
+}
