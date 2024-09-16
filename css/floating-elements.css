@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+
+.tweet {
+    border: 5px solid lightgrey;
+}
+
+.avatar {
+    background-color: gold;
+    border-radius: 100%;
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.5rem;
+}
+
+.clear {
+    clear: both;
+}

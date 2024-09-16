@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    height: 200vh;
+}
+p {
+    margin: 20px;
+    padding: 0;
+}
+/* .box::before {
+    content: "Hello";
+} */
+.boxes {
+    border: 3px solid lightgrey;
+    position: relative;
+}
+.box {
+    height: 5rem;
+    width: 5rem;
+}
+.box-one {
+    background-color: gold;
+}
+.box-two {
+    background-color: tomato;
+    position: fixed;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    top: 0;
+    z-index: 1;
+}
+.box-three {
+    background-color: dodgerblue;
+}
+.box2 {
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+    overflow: hidden auto;
+}
+.box3 {
+    background-color: gold;
+    border-top: 3px solid orange;
+    height: 100vh;
+    width: 10rem;
+    overflow: hidden scroll;
+}
