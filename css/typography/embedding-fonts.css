@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.woff');
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/open-sans/OpenSans-Bold-webfont.woff');
+    src: url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('svg');
+    font-weight: bold;
+    font-style: bold;
+    font-display: optional;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    width: 100%;
+}
+body {
+    font-family: "opensans", Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    color: #333;
+    font-weight: normal;
+    font-size: 1rem; /* 16px */
+}
