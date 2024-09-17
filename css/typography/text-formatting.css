@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    font-size: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    width: 100%;
+}
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+h1 {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    font-size: 4.209rem;
+    font-weight: normal;
+    margin: 3rem 0 1.5rem;
+}
+p {
+    border: 3px solid gold;
+    color: #333;
+    font-weight: normal;
+    max-width: 65ch;
+}
+p + p {
+    text-indent: 1rem;
+}
+p:last-of-type {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-columns {
+    border: 0;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 3px dotted #ccc;
+}
