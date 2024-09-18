@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/images-module/modern-image-formats.css">
+    <script src="https://kit.fontawesome.com/7f8e3489c9.js" crossorigin="anonymous"></script>
+    <title>cwm-html-css-pt2 - modern image formats</title>
+</head>
+<body>
+    <h1>Modern Image Formats</h1>
+    <ul>
+        <li>Source 1: preferred</li>
+        <li>Source 2: alternative fallback for no webp support</li>
+        <li>img: contains alt for accessibility</li>
+    </ul>
+    <picture>
+        <source
+        type="image/webp"
+        srcset="/images/meal.webp"
+        >
+        <source
+        type="image/jpeg"
+        srcset="/images/meal.jpg"
+        >
+        <img src="/images/meal.jpg" alt="A bowl of salmon and curry">
+    </picture>
+    <h2>Art Direction</h2>
+    <ul>
+        <li>Source 1: mobile phone</li>
+        <li>Source 2: screens > phone</li>
+        <li>img: contains alt for accessibility</li>
+    </ul>
+    <picture>
+        <source
+            media="(max-width: 500px)"
+            srcset="/images/meal-cropped.jpg"
+        >
+        <source
+            media="(min-width: 501px)"
+            srcset="/images/meal.jpg"
+        >
+        <img src="/images/meal.jpg" alt="A bowl of salmon and curry">
+    </picture>
+    <h2>SVG</h2>
+    <img class="ufo" src="/images/ufo.svg" alt="ufo svg">
+    <h2>Font Icons</h2>
+    <span class="icon">
+        <i class="fa-solid fa-users"></i>
+    </span>
+    <footer><a href="/" style="text-align: right; display: block;">home</a></footer>
+</body>
+</html>

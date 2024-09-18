@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
+    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
+}
+body {
+    font-size: 1rem;
+    /* height: 100vh;
+    display: flex;
+    flex-direction: column; */
+    letter-spacing: 1px;
+}
+footer {
+    margin-top: auto;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    width: 100%;
+}
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin: 3rem 0 1rem;
+}
+
+img,
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-100 {
+    width: 100px;
+    height: auto;
+}
+.img-200 {
+    width: 200px;
+    height: auto;
+}
+.img-400 {
+    width: 400px;
+    height: auto;
+}
+
+.sprite {
+    background-image: url('../../images/css-sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+.bg-dishes {
+    background-position: 0 0; /* Adjust position for the specific sprite */
+}
+.bg-landing {
+    background-position: -100px 0;
+}
+.bg-rocketship {
+    background-position: -200px 0;
+}
+.bg-saturn {
+    background-position: -300px 0;
+}
+.bg-ufo {
+    background-position: -400px 0;
+}
+
+.clip-arrow-right {
+    clip-path: polygon(
+        0% 20%,
+        60% 20%,
+        60% 0%,
+        100% 50%,
+        60% 100%,
+        60% 80%,
+        0% 80%);
+}
+.hover-filter:hover {
+    filter: grayscale(70%) blur(2px);
+}
