@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/forms-module/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <script src="https://kit.fontawesome.com/7f8e3489c9.js" crossorigin="anonymous"></script>
+    <!-- Milligram CSS -->
+    <title>cwm-html-css-pt2 - forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="">
+        <!-- Hidden fields - NOT FOR SENSITIVE DATA -->
+        <input type="hidden" name="id" value="123"> 
+        <!-- Text inputs -->
+        <div class="mb-3">
+            <label
+                class=""
+                for="name"
+                >Name</label>
+            <input
+                class=""
+                id="name"
+                type="text"
+                autofocus
+                required
+                minlength="2"
+                maxlength="26">
+        </div>
+        <div class="mb-3">
+            <label
+                class=""
+                for="email">Email</label>
+            <input
+                class=""
+                id="email"                
+                type="email"
+                placeholder="Email">
+        </div>
+        <div class="mb-3">
+            <label
+                class=""
+                for="age">Age</label>
+            <input
+                class=""
+                id="age"                
+                type="number"
+                placeholder="Enter your age"
+                min="18"
+                max="100">
+        </div>
+        <!-- Fieldsets -->
+        <fieldset>
+            <legend>Billing Address</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Payment</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+        <!-- File inputs -->
+        <input type="file" multiple>
+        <!-- Range selector (slider) -->
+        <label for="range">Range</label>
+        <input type="range" min="0" max="100">
+        <!-- Radio buttons -->
+        <div>
+            <input type="radio" name="membership" id="silver" checked>
+            <label class="label-inline" for="silver">Silver <small>Checked by default</small></label>
+        </div>
+        <div>
+            <input type="radio" name="membership" id="gold">
+            <label class="label-inline" for="gold">Gold</label>
+        </div>
+        <div>
+            <input type="radio" name="membership" id="platinum" disabled>
+            <label class="label-inline" for="platinum">Platinum <small>Disabled</small></label>
+        </div>
+        <!-- Checkboxes -->
+        <div>
+            <input type="checkbox" name="" id="frontend" checked>
+            <label class="label-inline" for="frontend">Frontend</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="frontend">
+            <label class="label-inline" for="frontend">Backend</label>
+        </div>
+        <!-- Datalist for suggestions -->
+        <input type="text" list="countries" autocomplete="off">
+        <datalist id="countries">
+            <option data-value="1">Australia</option>
+            <option data-value="2">Canada</option>
+            <option data-value="3">India</option>
+            <option data-value="4">United States</option>
+        </datalist>
+        <!-- Single select -->
+        <select name="" id="">
+            <optgroup label="Frontend Courses">
+                <option value="" selected>HTML</option>
+                <option value="">CSS</option>
+                <option value="">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend Courses">
+                <option value="">PHP</option>
+                <option value="">Python</option>
+                <option value="">Ruby</option>
+            </optgroup>
+        </select>
+        <!-- Multiple select -->
+        <select name="" id="" multiple>
+            <option value="" selected>HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+        </select>
+
+        <textarea name="" id=""></textarea>
+        <button class="btn btn-primary" type="submit"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Register</button>
+        <button class="btn btn-secondary" type="reset">Clear</button>
+    </form>
+    <footer><a href="/" style="text-align: right; display: block;">home</a></footer>
+</body>
+</html>
