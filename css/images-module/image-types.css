@@ -1,34 +1,16 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
-    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
-}
+
 body {
     background: url(../../images/bg-sanfrancisco.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 1rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     letter-spacing: 1px;
-}
-footer {
-    margin-top: auto;
-    background-color: lightgrey;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem;
-    width: 100%;
-}
-body {
-    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 h1 {
     font-family: Roboto, 'Times New Roman', Times, serif;
