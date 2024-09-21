@@ -1,12 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%; /* 1rem = 16px - if browser default is 16px */
-    font-size: 100%; /* 1rem = 10px - if browser default is 10px */
-}
+
 body {
     margin: 10px;
 }
